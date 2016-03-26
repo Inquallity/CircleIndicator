@@ -31,7 +31,7 @@ public class DynamicAdapterFragment extends Fragment implements View.OnClickList
         ViewPager viewpager = (ViewPager) view.findViewById(R.id.viewpager);
         CircleIndicator indicator = (CircleIndicator) view.findViewById(R.id.indicator);
         viewpager.setAdapter(mAdapter);
-        indicator.setViewPager(viewpager);
+        indicator.setupViewPager(viewpager);
     }
 
     @Override public void onClick(View v) {

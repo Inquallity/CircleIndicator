@@ -23,6 +23,6 @@ public class ChangeColorFragment extends Fragment {
         ViewPager viewpager = (ViewPager) view.findViewById(R.id.viewpager);
         CircleIndicator indicator = (CircleIndicator) view.findViewById(R.id.indicator);
         viewpager.setAdapter(new DemoPagerAdapter());
-        indicator.setViewPager(viewpager);
+        indicator.setupViewPager(viewpager);
     }
 }
